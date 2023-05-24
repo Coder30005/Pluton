@@ -25,6 +25,19 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
+                        <li class="nav-item">
+                            @{
+                                if(ViewData["Login"] == null)
+                                {
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Вход">Вход</a>
+                                }
+                                else
+                                {
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Выход">Выход</a>
+                                }
+                            }
+                         
+                        </li>
                     </ul>
                 </div>
             </div>
